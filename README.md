@@ -146,3 +146,12 @@ der Tisch
   after displaying the suffix.
 
 
+---
+## CSV File Preparation (Separator & Cleanup)
+
+### 1. Remove all `;` characters (in-place)
+
+The following command removes all occurrences of the `;` character from **Deutsch-B1.csv** and overwrites the same file:
+
+```bash
+sed -i '' 's/;//g' Deutsch-B1.csv
