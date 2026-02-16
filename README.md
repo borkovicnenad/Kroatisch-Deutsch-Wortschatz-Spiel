@@ -155,3 +155,12 @@ The following command removes all occurrences of the `;` character from **Deutsc
 
 ```bash
 sed -i '' 's/;//g' Deutsch-B1.csv
+```
+
+### 2. Replace all , with ; (create a new file)
+
+The following command replaces all commas , with semicolons ; and saves the result into a new file called Deutsch-B1-cpy.csv:
+
+```bash
+sed 's/,/;/g' Deutsch-B1.csv > Deutsch-B1-cpy.csv
+```
