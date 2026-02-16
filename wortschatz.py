@@ -36,7 +36,7 @@ def append_to_file(file_name, input_data):
     except Exception as e:
         print(f"An error occurred: {e}")
         
-dictionary_file_path = './Wortschatz/Deutsch-B1.csv'
+dictionary_file_path = './Wortschatz/Deutsch-B1-cpy.csv'
 statistics_file_path = './Statistiken.csv'
 dictionary_name = dictionary_file_path.split('/')[-1]
 word_list = read_csv_to_objects(dictionary_file_path)
